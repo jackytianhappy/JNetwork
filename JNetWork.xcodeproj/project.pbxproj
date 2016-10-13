@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85BE40B21DAF3B9E00054B0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B11DAF3B9E00054B0F /* main.m */; };
+		85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B41DAF3B9E00054B0F /* AppDelegate.m */; };
+		85BE40B81DAF3B9E00054B0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B71DAF3B9E00054B0F /* ViewController.m */; };
+		85BE40BB1DAF3B9E00054B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40B91DAF3B9E00054B0F /* Main.storyboard */; };
+		85BE40BD1DAF3B9E00054B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */; };
+		85BE40C01DAF3B9E00054B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */; };
+		85BE40CB1DAF3B9E00054B0F /* JNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40CA1DAF3B9E00054B0F /* JNetWorkTests.m */; };
+		85BE40D61DAF3B9E00054B0F /* JNetWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40D51DAF3B9E00054B0F /* JNetWorkUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85BE40C71DAF3B9E00054B0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85BE40A51DAF3B9E00054B0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85BE40AC1DAF3B9E00054B0F;
+			remoteInfo = JNetWork;
+		};
+		85BE40D21DAF3B9E00054B0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85BE40A51DAF3B9E00054B0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85BE40AC1DAF3B9E00054B0F;
+			remoteInfo = JNetWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85BE40AD1DAF3B9E00054B0F /* JNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BE40B11DAF3B9E00054B0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85BE40B31DAF3B9E00054B0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85BE40B41DAF3B9E00054B0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85BE40B61DAF3B9E00054B0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85BE40B71DAF3B9E00054B0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85BE40BA1DAF3B9E00054B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85BE40BF1DAF3B9E00054B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85BE40C11DAF3B9E00054B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85BE40C61DAF3B9E00054B0F /* JNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BE40CA1DAF3B9E00054B0F /* JNetWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNetWorkTests.m; sourceTree = "<group>"; };
+		85BE40CC1DAF3B9E00054B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85BE40D11DAF3B9E00054B0F /* JNetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BE40D51DAF3B9E00054B0F /* JNetWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNetWorkUITests.m; sourceTree = "<group>"; };
+		85BE40D71DAF3B9E00054B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85BE40AA1DAF3B9E00054B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40C31DAF3B9E00054B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40CE1DAF3B9E00054B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85BE40A41DAF3B9E00054B0F = {
+			isa = PBXGroup;
+			children = (
+				85BE40AF1DAF3B9E00054B0F /* JNetWork */,
+				85BE40C91DAF3B9E00054B0F /* JNetWorkTests */,
+				85BE40D41DAF3B9E00054B0F /* JNetWorkUITests */,
+				85BE40AE1DAF3B9E00054B0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85BE40AE1DAF3B9E00054B0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85BE40AD1DAF3B9E00054B0F /* JNetWork.app */,
+				85BE40C61DAF3B9E00054B0F /* JNetWorkTests.xctest */,
+				85BE40D11DAF3B9E00054B0F /* JNetWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85BE40AF1DAF3B9E00054B0F /* JNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				85BE40B31DAF3B9E00054B0F /* AppDelegate.h */,
+				85BE40B41DAF3B9E00054B0F /* AppDelegate.m */,
+				85BE40B61DAF3B9E00054B0F /* ViewController.h */,
+				85BE40B71DAF3B9E00054B0F /* ViewController.m */,
+				85BE40B91DAF3B9E00054B0F /* Main.storyboard */,
+				85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */,
+				85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */,
+				85BE40C11DAF3B9E00054B0F /* Info.plist */,
+				85BE40B01DAF3B9E00054B0F /* Supporting Files */,
+			);
+			path = JNetWork;
+			sourceTree = "<group>";
+		};
+		85BE40B01DAF3B9E00054B0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85BE40B11DAF3B9E00054B0F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85BE40C91DAF3B9E00054B0F /* JNetWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				85BE40CA1DAF3B9E00054B0F /* JNetWorkTests.m */,
+				85BE40CC1DAF3B9E00054B0F /* Info.plist */,
+			);
+			path = JNetWorkTests;
+			sourceTree = "<group>";
+		};
+		85BE40D41DAF3B9E00054B0F /* JNetWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85BE40D51DAF3B9E00054B0F /* JNetWorkUITests.m */,
+				85BE40D71DAF3B9E00054B0F /* Info.plist */,
+			);
+			path = JNetWorkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85BE40AC1DAF3B9E00054B0F /* JNetWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85BE40DA1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWork" */;
+			buildPhases = (
+				85BE40A91DAF3B9E00054B0F /* Sources */,
+				85BE40AA1DAF3B9E00054B0F /* Frameworks */,
+				85BE40AB1DAF3B9E00054B0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JNetWork;
+			productName = JNetWork;
+			productReference = 85BE40AD1DAF3B9E00054B0F /* JNetWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85BE40C51DAF3B9E00054B0F /* JNetWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85BE40DD1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkTests" */;
+			buildPhases = (
+				85BE40C21DAF3B9E00054B0F /* Sources */,
+				85BE40C31DAF3B9E00054B0F /* Frameworks */,
+				85BE40C41DAF3B9E00054B0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85BE40C81DAF3B9E00054B0F /* PBXTargetDependency */,
+			);
+			name = JNetWorkTests;
+			productName = JNetWorkTests;
+			productReference = 85BE40C61DAF3B9E00054B0F /* JNetWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85BE40D01DAF3B9E00054B0F /* JNetWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85BE40E01DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkUITests" */;
+			buildPhases = (
+				85BE40CD1DAF3B9E00054B0F /* Sources */,
+				85BE40CE1DAF3B9E00054B0F /* Frameworks */,
+				85BE40CF1DAF3B9E00054B0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85BE40D31DAF3B9E00054B0F /* PBXTargetDependency */,
+			);
+			name = JNetWorkUITests;
+			productName = JNetWorkUITests;
+			productReference = 85BE40D11DAF3B9E00054B0F /* JNetWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85BE40A51DAF3B9E00054B0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jacky;
+				TargetAttributes = {
+					85BE40AC1DAF3B9E00054B0F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L9ALLF39KA;
+						ProvisioningStyle = Automatic;
+					};
+					85BE40C51DAF3B9E00054B0F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L9ALLF39KA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85BE40AC1DAF3B9E00054B0F;
+					};
+					85BE40D01DAF3B9E00054B0F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L9ALLF39KA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85BE40AC1DAF3B9E00054B0F;
+					};
+				};
+			};
+			buildConfigurationList = 85BE40A81DAF3B9E00054B0F /* Build configuration list for PBXProject "JNetWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85BE40A41DAF3B9E00054B0F;
+			productRefGroup = 85BE40AE1DAF3B9E00054B0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85BE40AC1DAF3B9E00054B0F /* JNetWork */,
+				85BE40C51DAF3B9E00054B0F /* JNetWorkTests */,
+				85BE40D01DAF3B9E00054B0F /* JNetWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85BE40AB1DAF3B9E00054B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BE40C01DAF3B9E00054B0F /* LaunchScreen.storyboard in Resources */,
+				85BE40BD1DAF3B9E00054B0F /* Assets.xcassets in Resources */,
+				85BE40BB1DAF3B9E00054B0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40C41DAF3B9E00054B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40CF1DAF3B9E00054B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85BE40A91DAF3B9E00054B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BE40B81DAF3B9E00054B0F /* ViewController.m in Sources */,
+				85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */,
+				85BE40B21DAF3B9E00054B0F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40C21DAF3B9E00054B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BE40CB1DAF3B9E00054B0F /* JNetWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85BE40CD1DAF3B9E00054B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BE40D61DAF3B9E00054B0F /* JNetWorkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85BE40C81DAF3B9E00054B0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85BE40AC1DAF3B9E00054B0F /* JNetWork */;
+			targetProxy = 85BE40C71DAF3B9E00054B0F /* PBXContainerItemProxy */;
+		};
+		85BE40D31DAF3B9E00054B0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85BE40AC1DAF3B9E00054B0F /* JNetWork */;
+			targetProxy = 85BE40D21DAF3B9E00054B0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85BE40B91DAF3B9E00054B0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85BE40BA1DAF3B9E00054B0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85BE40BF1DAF3B9E00054B0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85BE40D81DAF3B9E00054B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85BE40D91DAF3B9E00054B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85BE40DB1DAF3B9E00054B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85BE40DC1DAF3B9E00054B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85BE40DE1DAF3B9E00054B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JNetWork.app/JNetWork";
+			};
+			name = Debug;
+		};
+		85BE40DF1DAF3B9E00054B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JNetWork.app/JNetWork";
+			};
+			name = Release;
+		};
+		85BE40E11DAF3B9E00054B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JNetWork;
+			};
+			name = Debug;
+		};
+		85BE40E21DAF3B9E00054B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L9ALLF39KA;
+				INFOPLIST_FILE = JNetWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jacky.JNetWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JNetWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85BE40A81DAF3B9E00054B0F /* Build configuration list for PBXProject "JNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BE40D81DAF3B9E00054B0F /* Debug */,
+				85BE40D91DAF3B9E00054B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85BE40DA1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BE40DB1DAF3B9E00054B0F /* Debug */,
+				85BE40DC1DAF3B9E00054B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85BE40DD1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BE40DE1DAF3B9E00054B0F /* Debug */,
+				85BE40DF1DAF3B9E00054B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85BE40E01DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BE40E11DAF3B9E00054B0F /* Debug */,
+				85BE40E21DAF3B9E00054B0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85BE40A51DAF3B9E00054B0F /* Project object */;
+}
