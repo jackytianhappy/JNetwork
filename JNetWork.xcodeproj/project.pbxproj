@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA26373763CD4710E10DDEE /* libPods-JNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF28E46B4464B67FA630DD5 /* libPods-JNetWork.a */; };
 		85BE40B21DAF3B9E00054B0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B11DAF3B9E00054B0F /* main.m */; };
 		85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B41DAF3B9E00054B0F /* AppDelegate.m */; };
 		85BE40B81DAF3B9E00054B0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B71DAF3B9E00054B0F /* ViewController.m */; };
-		85BE40BB1DAF3B9E00054B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40B91DAF3B9E00054B0F /* Main.storyboard */; };
 		85BE40BD1DAF3B9E00054B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */; };
 		85BE40C01DAF3B9E00054B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */; };
 		85BE40CB1DAF3B9E00054B0F /* JNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40CA1DAF3B9E00054B0F /* JNetWorkTests.m */; };
@@ -41,7 +41,6 @@
 		85BE40B41DAF3B9E00054B0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		85BE40B61DAF3B9E00054B0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		85BE40B71DAF3B9E00054B0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		85BE40BA1DAF3B9E00054B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85BE40BF1DAF3B9E00054B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85BE40C11DAF3B9E00054B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		85BE40D11DAF3B9E00054B0F /* JNetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JNetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BE40D51DAF3B9E00054B0F /* JNetWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNetWorkUITests.m; sourceTree = "<group>"; };
 		85BE40D71DAF3B9E00054B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE3DF3CF5BABB767E80BE59 /* Pods-JNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-JNetWork/Pods-JNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		9CF28E46B4464B67FA630DD5 /* libPods-JNetWork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JNetWork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E48ED302342BF1342528AA /* Pods-JNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JNetWork/Pods-JNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA26373763CD4710E10DDEE /* libPods-JNetWork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7864C3DBA56EEC32A5A7C869 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CF28E46B4464B67FA630DD5 /* libPods-JNetWork.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858490D01DB21EEE00AA0CCD /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
 		85BE40A41DAF3B9E00054B0F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +103,8 @@
 				85BE40C91DAF3B9E00054B0F /* JNetWorkTests */,
 				85BE40D41DAF3B9E00054B0F /* JNetWorkUITests */,
 				85BE40AE1DAF3B9E00054B0F /* Products */,
+				AC3DBA29111F065131872063 /* Pods */,
+				7864C3DBA56EEC32A5A7C869 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +121,11 @@
 		85BE40AF1DAF3B9E00054B0F /* JNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				858490D01DB21EEE00AA0CCD /* NetworkLayer */,
 				85BE40B31DAF3B9E00054B0F /* AppDelegate.h */,
 				85BE40B41DAF3B9E00054B0F /* AppDelegate.m */,
 				85BE40B61DAF3B9E00054B0F /* ViewController.h */,
 				85BE40B71DAF3B9E00054B0F /* ViewController.m */,
-				85BE40B91DAF3B9E00054B0F /* Main.storyboard */,
 				85BE40BC1DAF3B9E00054B0F /* Assets.xcassets */,
 				85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */,
 				85BE40C11DAF3B9E00054B0F /* Info.plist */,
@@ -140,6 +160,15 @@
 			path = JNetWorkUITests;
 			sourceTree = "<group>";
 		};
+		AC3DBA29111F065131872063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E48ED302342BF1342528AA /* Pods-JNetWork.debug.xcconfig */,
+				8AE3DF3CF5BABB767E80BE59 /* Pods-JNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85BE40DA1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWork" */;
 			buildPhases = (
+				519949736DAF01D641132ADA /* Check Pods Manifest.lock */,
 				85BE40A91DAF3B9E00054B0F /* Sources */,
 				85BE40AA1DAF3B9E00054B0F /* Frameworks */,
 				85BE40AB1DAF3B9E00054B0F /* Resources */,
+				15AEC70EE2832FF5B2CCBE49 /* Embed Pods Frameworks */,
+				97CC8C3C7E26E77F471B1F1F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,7 +283,6 @@
 			files = (
 				85BE40C01DAF3B9E00054B0F /* LaunchScreen.storyboard in Resources */,
 				85BE40BD1DAF3B9E00054B0F /* Assets.xcassets in Resources */,
-				85BE40BB1DAF3B9E00054B0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +301,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15AEC70EE2832FF5B2CCBE49 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JNetWork/Pods-JNetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		519949736DAF01D641132ADA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97CC8C3C7E26E77F471B1F1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JNetWork/Pods-JNetWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85BE40A91DAF3B9E00054B0F /* Sources */ = {
@@ -314,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85BE40B91DAF3B9E00054B0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85BE40BA1DAF3B9E00054B0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85BE40BE1DAF3B9E00054B0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -423,6 +494,7 @@
 		};
 		85BE40DB1DAF3B9E00054B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E48ED302342BF1342528AA /* Pods-JNetWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9ALLF39KA;
@@ -435,6 +507,7 @@
 		};
 		85BE40DC1DAF3B9E00054B0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE3DF3CF5BABB767E80BE59 /* Pods-JNetWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9ALLF39KA;
@@ -514,6 +587,7 @@
 				85BE40DC1DAF3B9E00054B0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85BE40DD1DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +596,7 @@
 				85BE40DF1DAF3B9E00054B0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85BE40E01DAF3B9E00054B0F /* Build configuration list for PBXNativeTarget "JNetWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +605,7 @@
 				85BE40E21DAF3B9E00054B0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
