@@ -83,14 +83,49 @@ static const NSInteger kTimeout = 30;
 }
 
 #pragma mark -POST
--(void)postRequestWithUrl:(NSString *)url success:(void (^)(id, id))success failure:(void (^)(id, NSError *))success{
+-(void)postRequestWithUrl:(NSString *)url success:(void (^)(id, id))success failure:(void (^)(id, NSError *error))failure{
+    [self postRequestWithUrl:url parameters:nil success:success failure:failure];
+}
+-(void)postRequestWithUrl:(NSString *)url parameters:(id)parameters success:(void (^)(id, id))success failure:(void (^)(id, NSError *error))failure{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //设置超长时间
+    [manager.requestSerializer setTimeoutInterval:kTimeout];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html", nil];
     
+//    //设置消息体
+//    [manager.requestSerializer setQueryStringSerializationWithBlock:^NSString * _Nonnull(NSURLRequest * _Nonnull request, id  _Nonnull parameters, NSError * _Nullable __autoreleasing * _Nullable error) {
+//        NSError *err;
+//        NSData *strdata = [NSJSONSerialization dataWithJSONObject:parameters options:NSJSONWritingPrettyPrinted error:&err];
+//        NSString *reqString = [[NSString alloc]initWithData:strdata encoding:NSUTF8StringEncoding];
+//        NSString *dataString = [NSString stringWithFormat:@"%@=%@",@"data",reqString];
+//        return dataString;
+//    }];
+    
+    
+    [manager POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        success(task,responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       
+        failure(task,error);
+        
+    }];
 }
 
-
-
--(void)postRequestWithUrl:(NSString *)url headerFields:(NSDictionary *)headerFields contentTypes:(NSSet *)set body:(id)body bodyBlock:(HCReqMessageBodyBlock)bodyBlock success:(void (^)(id, id))success failure:(void (^)(id, NSError *))success{
-
-}
+//以下暂时感觉用不到 先不予以测试
+//-(void)postRequestWithUrl:(NSString *)url body:(id)body success:(void (^)(id, id))success failure:(void (^)(id, NSError *))failure{
+//    [self postRequestWithUrl:url headerFields:nil contentTypes:nil body:body bodyBlock:nil success:success failure:failure];
+//}
+//
+//-(void)postRequestWithUrl:(NSString *)url headerFields:(NSDictionary *)headerFields body:(id)body success:(void (^)(id, id))success failure:(void (^)(id, NSError *))failure{
+//    [self postRequestWithUrl:url headerFields:headerFields contentTypes:nil body:body bodyBlock:nil success:success failure:failure];
+//}
+//
+//-(void)postRequestWithUrl:(NSString *)url headerFields:(NSDictionary *)headerFields contentTypes:(NSSet *)set body:(id)body bodyBlock:(HCReqMessageBodyBlock)bodyBlock success:(void (^)(id, id))success failure:(void (^)(id, NSError *))failure{
+// 
+//    
+//    
+//}
 
 @end

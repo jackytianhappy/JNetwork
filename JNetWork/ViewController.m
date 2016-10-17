@@ -19,13 +19,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
+
+    //get 请求
+//    [[BaseNetEngine sharedInstance]getRequestWithUrl:@"http://example.vapor.codes/json" success:^(id operation, id responseObject) {
+//        
+//        NSLog(@"输出成功后的对象:%@",[responseObject objectForKey:@"number"]);
+//    } failure:^(id operation, NSError *error) {
+//        NSLog(@"输出失败后的错误:%@",error);
+//    }];
     
-    [[BaseNetEngine sharedInstance]getRequestWithUrl:@"http://example.vapor.codes/json" success:^(id operation, id responseObject) {
-        
-        NSLog(@"输出成功后的对象:%@",[responseObject objectForKey:@"number"]);
+    //post 请求
+    [[BaseNetEngine sharedInstance]postRequestWithUrl:@"http://localhost:8080/hello" parameters:nil success:^(id operation, id responseObject) {
+        NSLog(@"输出成功后的对象:%@",responseObject);
     } failure:^(id operation, NSError *error) {
-        NSLog(@"输出失败后的错误:%@",error);
+        NSLog(@"输出失败后的对象:%@",error);
     }];
+    
+    
     
 }
 

@@ -44,31 +44,33 @@ typedef NSString * (^HCReqMessageBodyBlock)(id parameters);
 //post 请求
 -(void)postRequestWithUrl:(NSString *)url
                   success:(void (^)(id operation, id responseObject))success
-                  failure:(void (^)(id operation, NSError *))success;
+                  failure:(void (^)(id operation, NSError *error))failure;
 
 -(void)postRequestWithUrl:(NSString *)url
               parameters:(id)parameters
                  success:(void (^)(id operation, id responseObject))success
-                 failure:(void (^)(id operation, NSError *))success;
+                 failure:(void (^)(id operation, NSError *error))failure;
 
--(void)postRequestWithUrl:(NSString *)url
-                     body:(id)body
-                  success:(void (^)(id operation, id responseObject))success
-                  failure:(void (^)(id operation, NSError *))success;
 
--(void)postRequestWithUrl:(NSString *)url
-             headerFields:(NSDictionary *)headerFields
-                     body:(id)body
-                  success:(void (^)(id operation, id responseObject))success
-                  failure:(void (^)(id operation, NSError *))success;
+//以下暂时感觉用不到 先不予以测试
+//-(void)postRequestWithUrl:(NSString *)url
+//                     body:(id)body
+//                  success:(void (^)(id operation, id responseObject))success
+//                  failure:(void (^)(id operation, NSError *error))failure;
 
--(void)postRequestWithUrl:(NSString *)url
-         headerFields:(NSDictionary *)headerFields
-         contentTypes:(NSSet *)set
-                 body:(id)body
-            bodyBlock:(HCReqMessageBodyBlock)bodyBlock
-              success:(void (^)(id operation, id responseObject))success
-              failure:(void (^)(id operation, NSError *))success;
+//-(void)postRequestWithUrl:(NSString *)url
+//             headerFields:(NSDictionary *)headerFields
+//                     body:(id)body
+//                  success:(void (^)(id operation, id responseObject))success
+//                  failure:(void (^)(id operation, NSError *error))failure;
+//
+//-(void)postRequestWithUrl:(NSString *)url
+//         headerFields:(NSDictionary *)headerFields
+//         contentTypes:(NSSet *)set
+//                 body:(id)body
+//            bodyBlock:(HCReqMessageBodyBlock)bodyBlock
+//              success:(void (^)(id operation, id responseObject))success
+//              failure:(void (^)(id operation, NSError *error))failure;
 
 
 
