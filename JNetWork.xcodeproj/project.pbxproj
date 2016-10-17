@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AA26373763CD4710E10DDEE /* libPods-JNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF28E46B4464B67FA630DD5 /* libPods-JNetWork.a */; };
+		858490D41DB228AB00AA0CCD /* BaseNetEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 858490D31DB228AB00AA0CCD /* BaseNetEngine.m */; };
 		85BE40B21DAF3B9E00054B0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B11DAF3B9E00054B0F /* main.m */; };
 		85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B41DAF3B9E00054B0F /* AppDelegate.m */; };
 		85BE40B81DAF3B9E00054B0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B71DAF3B9E00054B0F /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		858490D21DB228AB00AA0CCD /* BaseNetEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetEngine.h; sourceTree = "<group>"; };
+		858490D31DB228AB00AA0CCD /* BaseNetEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetEngine.m; sourceTree = "<group>"; };
 		85BE40AD1DAF3B9E00054B0F /* JNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BE40B11DAF3B9E00054B0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85BE40B31DAF3B9E00054B0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,8 +95,18 @@
 		858490D01DB21EEE00AA0CCD /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				858490D11DB2286900AA0CCD /* BaseNetEngine */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		858490D11DB2286900AA0CCD /* BaseNetEngine */ = {
+			isa = PBXGroup;
+			children = (
+				858490D21DB228AB00AA0CCD /* BaseNetEngine.h */,
+				858490D31DB228AB00AA0CCD /* BaseNetEngine.m */,
+			);
+			path = BaseNetEngine;
 			sourceTree = "<group>";
 		};
 		85BE40A41DAF3B9E00054B0F = {
@@ -357,6 +370,7 @@
 			files = (
 				85BE40B81DAF3B9E00054B0F /* ViewController.m in Sources */,
 				85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */,
+				858490D41DB228AB00AA0CCD /* BaseNetEngine.m in Sources */,
 				85BE40B21DAF3B9E00054B0F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
