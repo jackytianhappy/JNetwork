@@ -29,7 +29,7 @@
 //    }];
     
     //post 请求
-    [[BaseNetEngine sharedInstance]postRequestWithUrl:@"http://localhost:8080/hello" parameters:nil success:^(id operation, id responseObject) {
+    [[BaseNetEngine sharedInstance]postRequestWithUrl:@"http://0.0.0.0:8080/name" parameters:nil success:^(id operation, id responseObject) {
         NSLog(@"输出成功后的对象:%@",responseObject);
     } failure:^(id operation, NSError *error) {
         NSLog(@"输出失败后的对象:%@",error);
