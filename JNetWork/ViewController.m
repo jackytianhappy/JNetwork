@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BaseNetEngine.h"
+#import "HttpClient.h"
 
 @interface ViewController ()
 
@@ -20,20 +20,26 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
 
+    
+    [[HttpClient sharedInstance]getReqWithUrl:@"http://url.cn/41Po34E" success:^(id operation, id responseObject) {
+        NSLog(@"success:%@",responseObject);
+    } failure:^(id operation, NSError *error) {
+        NSLog(@"fail:%@",error);
+    }];
+    
     //get 请求
-//    [[BaseNetEngine sharedInstance]getRequestWithUrl:@"http://example.vapor.codes/json" success:^(id operation, id responseObject) {
-//        
-//        NSLog(@"输出成功后的对象:%@",[responseObject objectForKey:@"number"]);
+//    [[BaseNetEngine sharedInstance]getRequestWithUrl:@"http://url.cn/41Po34E" success:^(id operation, id responseObject) {
+//        NSLog(@"输出成功后的对象:%@",responseObject);
 //    } failure:^(id operation, NSError *error) {
 //        NSLog(@"输出失败后的错误:%@",error);
 //    }];
     
     //post 请求
-    [[BaseNetEngine sharedInstance]postRequestWithUrl:@"http://0.0.0.0:8080/name" parameters:nil success:^(id operation, id responseObject) {
-        NSLog(@"输出成功后的对象:%@",responseObject);
-    } failure:^(id operation, NSError *error) {
-        NSLog(@"输出失败后的对象:%@",error);
-    }];
+//    [[BaseNetEngine sharedInstance]postRequestWithUrl:@"http://0.0.0.0:8080/name" parameters:nil success:^(id operation, id responseObject) {
+//        NSLog(@"输出成功后的对象:%@",responseObject);
+//    } failure:^(id operation, NSError *error) {
+//        NSLog(@"输出失败后的对象:%@",error);
+//    }];
     
     
     
