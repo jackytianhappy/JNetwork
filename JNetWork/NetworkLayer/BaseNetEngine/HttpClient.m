@@ -33,6 +33,12 @@ BOOL isOpenHttpsSSL()
 
 static const NSInteger kTimeOut = 30.0f;
 
+@interface HttpClient(){
+    AFHTTPSessionManager *manager;
+}
+
+@end
+
 @implementation HttpClient
 
 static HttpClient *sharedInstance = NULL;
@@ -49,7 +55,7 @@ static HttpClient *sharedInstance = NULL;
 -(id)init
 {
     if (self = [super init]) {
-        
+        manager = [AFHTTPSessionManager manager];
     }
     return self;
 }
@@ -90,7 +96,6 @@ static HttpClient *sharedInstance = NULL;
               failure:(void (^)(id operation, NSError *error))failure
 {
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //设置超时时间30S
     [manager.requestSerializer setTimeoutInterval:kTimeOut];
     
@@ -134,7 +139,6 @@ static HttpClient *sharedInstance = NULL;
                success:(void (^)(id operation, id responseObject))success
                failure:(void (^)(id operation, NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //设置超时时间30S
     [manager.requestSerializer setTimeoutInterval:kTimeOut];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
@@ -194,7 +198,6 @@ static HttpClient *sharedInstance = NULL;
                success:(void (^)(id operation, id responseObject))success
                failure:(void (^)(id operation, NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //设置超时时间30S
     [manager.requestSerializer setTimeoutInterval:kTimeOut];
     
@@ -255,7 +258,6 @@ static HttpClient *sharedInstance = NULL;
                success:(void (^)(id operation, id responseObject))success
                failure:(void (^)(id operation, NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //设置超时时间30S
     [manager.requestSerializer setTimeoutInterval:kTimeOut];
     
@@ -329,7 +331,6 @@ static HttpClient *sharedInstance = NULL;
                    success:(void (^)(id operation, id responseObject))success
                    failure:(void (^)(id operation, NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     //设置超时时间30S
     [manager.requestSerializer setTimeoutInterval:kTimeOut];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
@@ -372,9 +373,6 @@ static HttpClient *sharedInstance = NULL;
                    success:(void (^)(id operation, id responseObject))success
                    failure:(void (^)(id operation, NSError *error))failure
 {
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    
     NSURL *URL = [NSURL URLWithString:url];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     NSURL *filePath = [NSURL fileURLWithPath:path]; //@"file://path/to/image.png"

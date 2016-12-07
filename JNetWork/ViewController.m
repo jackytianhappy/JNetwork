@@ -27,6 +27,8 @@
         NSLog(@"fail:%@",error);
     }];
     
+    
+    
     //get 请求
 //    [[BaseNetEngine sharedInstance]getRequestWithUrl:@"http://url.cn/41Po34E" success:^(id operation, id responseObject) {
 //        NSLog(@"输出成功后的对象:%@",responseObject);

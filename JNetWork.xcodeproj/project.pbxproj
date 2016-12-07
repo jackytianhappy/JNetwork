@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0AA26373763CD4710E10DDEE /* libPods-JNetWork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF28E46B4464B67FA630DD5 /* libPods-JNetWork.a */; };
+		852016791DDC456900A2A810 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 852016781DDC456900A2A810 /* BaseRequest.m */; };
 		85B02D701DD830EE00F5EB41 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B02D6F1DD830EE00F5EB41 /* NSString+URL.m */; };
 		85B02D831DD8435400F5EB41 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B02D821DD8435400F5EB41 /* HttpClient.m */; };
 		85BE40B21DAF3B9E00054B0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BE40B11DAF3B9E00054B0F /* main.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852016771DDC456900A2A810 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		852016781DDC456900A2A810 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		85B02D6E1DD830EE00F5EB41 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		85B02D6F1DD830EE00F5EB41 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		85B02D811DD8435400F5EB41 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
@@ -95,9 +98,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		852016761DDC451600A2A810 /* ObjectNetworkEngine */ = {
+			isa = PBXGroup;
+			children = (
+				852016771DDC456900A2A810 /* BaseRequest.h */,
+				852016781DDC456900A2A810 /* BaseRequest.m */,
+			);
+			path = ObjectNetworkEngine;
+			sourceTree = "<group>";
+		};
 		858490D01DB21EEE00AA0CCD /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				852016761DDC451600A2A810 /* ObjectNetworkEngine */,
 				858490D11DB2286900AA0CCD /* BaseNetEngine */,
 			);
 			path = NetworkLayer;
@@ -377,6 +390,7 @@
 				85BE40B51DAF3B9E00054B0F /* AppDelegate.m in Sources */,
 				85B02D831DD8435400F5EB41 /* HttpClient.m in Sources */,
 				85B02D701DD830EE00F5EB41 /* NSString+URL.m in Sources */,
+				852016791DDC456900A2A810 /* BaseRequest.m in Sources */,
 				85BE40B21DAF3B9E00054B0F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
